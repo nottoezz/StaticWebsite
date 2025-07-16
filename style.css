@@ -1,0 +1,109 @@
+/* background and font */
+body {
+  background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  font-family: 'Patrick Hand', cursive;
+  background-color: #fdfbf6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* main box */
+.container {
+  background: #fffefb;
+  padding: 30px;
+  border: 2px dashed #555;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 4px 4px 0 #bbb;
+}
+
+/* title */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* input and button area */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* input field */
+#input {
+  flex: 1;
+  padding: 10px;
+  border: 1px dashed #999;
+  border-radius: 6px;
+  background: #fffefc;
+  font-size: 16px;
+}
+
+/* add item button */
+#addButton {
+  background-color: #f7d794;
+  color: #333;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+#addButton:hover {
+  background-color: #f5cd79;
+}
+
+/* list styling */
+ul#itemList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* individual item */
+ul#itemList li {
+  padding: 10px 14px;
+  border: 1px dashed #ccc;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: #fffefb;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 18px;
+}
+
+/* item hover effect */
+ul#itemList li:hover {
+  background-color: #fef7e5;
+}
+
+/* crossed off item */
+ul#itemList li.checked {
+  text-decoration: line-through;
+  color: #999;
+  background-color: #f3f3f3;
+}
+
+/* delete button (the ×) */
+.close {
+  float: right;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #e74c3c; /* red */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* delete button hover effect */
+.close:hover {
+  transform: scale(1.2);
+}
+

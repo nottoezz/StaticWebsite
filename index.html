@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <!-- External CSS link-->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Shopping List</h2>
+
+      <!-- Used in the subsequent task to add new items -->
+      <div class="header">
+        <input type="text" id="input" placeholder="Item" />
+        <span onclick="addItem()" id="addButton">Add Item</span>
+      </div>
+
+      <!-- Items will be displayed within the unordered list-->
+      <ul id="itemList"></ul>
+    </div>
+
+    <!-- Link to Javascript file -->
+    <script src="main.js"></script>
+  </body>
+</html>
